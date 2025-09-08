@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- CORES PERSONALIZADAS ---------- */
+.bg-slate {
+    background-color: #000000 ;
+}
+
+.bg-coral {
+    background-color: #E74C3C !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.bg-coral:hover {
+    background-color: #c0392b !important;
+    color: #ffffff !important;
+}
+
+/* ---------- HERO / CAPA ---------- */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: url(/img/planodefundo-ebook.jpg) no-repeat center center/cover;
+}
+
+.titulo-capa {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.subtitulo-capa {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffffdd;
+    letter-spacing: 2px;
+}
+
+/* ---------- SEÇÕES ---------- */
+.section {
+    padding: 60px 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.section p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- NAVEGAÇÃO E BOTÕES ---------- */
+.navbar-brand, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.font-btn {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500 !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    transition: background-color 0.3s ease;
+}
+
+/* ---------- CARTÕES ---------- */
+.card-img-top {
+  object-fit: cover ;
+  height: 250px !important; 
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 400px !important;
+    object-fit: cover ;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .titulo-capa {
+        font-size: 3rem;
+    }
+
+    .subtitulo-capa {
+        font-size: 1.2rem;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
+
+/* ---------- Style Icons ---------- */
+.social-icon i {
+  font-size: 30px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #000000;
+}
